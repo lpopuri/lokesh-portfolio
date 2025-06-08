@@ -10,83 +10,30 @@
     html { scroll-behavior: smooth; }
   </style>
 </head>
-<body class="bg-cream text-brown font-sans">
+<body class="bg-gradient-to-br from-cream to-white text-brown font-sans">
+
+  <!-- Navbar -->
+  <nav class="w-full flex justify-between items-center p-4 bg-white shadow sticky top-0 z-50">
+    <div class="text-xl font-bold text-brown">Lokesh Popuri</div>
+    <ul class="hidden md:flex gap-6 text-sm font-medium">
+      <li><a href="#home" class="hover:text-orange-600 transition">Home</a></li>
+      <li><a href="#about" class="hover:text-orange-600 transition">About</a></li>
+      <li><a href="#skills" class="hover:text-orange-600 transition">Skills</a></li>
+      <li><a href="#projects" class="hover:text-orange-600 transition">Projects</a></li>
+      <li><a href="#services" class="hover:text-orange-600 transition">Services</a></li>
+      <li><a href="#contact" class="hover:text-orange-600 transition">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4" data-aos="fade-up">
-    <h1 class="text-4xl font-bold">Lokesh Popuri</h1>
-    <p class="text-xl mt-2">.NET Full Stack Developer | Cloud Enthusiast</p>
-    <p class="mt-4 max-w-xl">I build scalable, cloud-ready web applications using .NET Core, Azure, and modern frontend tools. I’m passionate about crafting performant APIs and beautiful user interfaces.</p>
-    <a href="Lokesh_Popuri_.NetDeveloper.pdf" download class="mt-6 px-6 py-2 border border-brown text-brown hover:bg-brown hover:text-cream transition-all duration-300 rounded">Download Resume</a>
-  </section>
-
-  <!-- About Section -->
-  <section class="py-16 bg-brown text-cream px-4" data-aos="fade-right">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-      <p class="mb-6">I'm a full-stack .NET developer with 5+ years of experience building robust backend services, designing cloud integrations, and implementing responsive front-end interfaces. I'm currently working at McKesson Corporation.</p>
-      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-        <span>.NET Core</span><span>C#</span><span>Azure</span>
-        <span>Web API</span><span>React</span><span>SQL Server</span>
-        <span>Entity Framework</span><span>Docker</span><span>GitHub Actions</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section class="py-16 px-4" data-aos="fade-left">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-semibold text-center mb-8">Experience</h2>
-      <div class="mb-6">
-        <h3 class="text-xl font-semibold">McKesson Corporation</h3>
-        <p class="text-sm text-gray-600 mb-1">.NET Full Stack Developer | 2022–Present</p>
-        <ul class="list-disc list-inside text-sm">
-          <li>Developed REST APIs using ASP.NET Core and Entity Framework.</li>
-          <li>Implemented CI/CD pipelines using Azure DevOps and GitHub Actions.</li>
-          <li>Worked with React and SQL Server to deliver scalable solutions.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="py-16 bg-brown text-cream px-4" data-aos="fade-up">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
-      <div>
-        <h2 class="text-3xl font-bold mb-4">Contact Information</h2>
-        <div class="space-y-4">
-          <div class="p-4 bg-white text-brown rounded shadow flex items-center space-x-4">
-            <div class="text-red-500 text-2xl">📧</div>
-            <div>
-              <p class="font-semibold">Email</p>
-              <p>lokeshp3693@gmail.com</p>
-            </div>
-          </div>
-          <div class="p-4 bg-white text-brown rounded shadow flex items-center space-x-4">
-            <div class="text-green-500 text-2xl">📞</div>
-            <div>
-              <p class="font-semibold">Phone</p>
-              <p>+1 123 456 7890</p>
-            </div>
-          </div>
-          <div class="p-4 bg-white text-brown rounded shadow flex items-center space-x-4">
-            <div class="text-blue-500 text-2xl">🔗</div>
-            <div>
-              <p class="font-semibold">LinkedIn</p>
-              <p>linkedin.com/in/lokeshpopuri</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h2 class="text-2xl font-bold mb-4">Send a Message</h2>
-        <form class="space-y-4">
-          <input type="text" placeholder="Your Name" class="w-full p-2 rounded border text-brown" />
-          <input type="email" placeholder="Your Email" class="w-full p-2 rounded border text-brown" />
-          <textarea placeholder="Your Message" class="w-full p-2 rounded border text-brown h-32"></textarea>
-          <button type="submit" class="bg-cream text-brown px-4 py-2 rounded hover:bg-white transition">Send</button>
-        </form>
-      </div>
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4" data-aos="fade-up">
+    <h1 class="text-5xl font-extrabold text-brown leading-tight">Lokesh<br>Popuri</h1>
+    <p class="text-xl text-orange-700 mt-2">Full Stack .NET Developer | Cloud & DevOps Enthusiast</p>
+    <p class="mt-4 max-w-2xl text-gray-700">Building clean backend systems and scalable cloud-ready solutions. Currently focused on creating reliable web apps with .NET Core, Azure, and modern JavaScript frameworks.</p>
+    <div class="flex flex-wrap justify-center gap-4 mt-6">
+      <a href="Lokesh_Popuri_.NetDeveloper.pdf" download class="bg-orange-700 text-white px-6 py-2 rounded-full shadow hover:bg-orange-800 transition flex items-center gap-2">⬇️ View Resume</a>
+      <a href="#projects" class="border border-orange-700 text-orange-700 px-6 py-2 rounded-full hover:bg-orange-700 hover:text-white transition flex items-center gap-2">👁️ View Projects</a>
+      <a href="#contact" class="text-orange-700 underline hover:text-orange-800 transition flex items-center gap-2">📨 Contact Me</a>
     </div>
   </section>
 
@@ -96,8 +43,6 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>
