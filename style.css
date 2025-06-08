@@ -290,5 +290,25 @@ footer {
   font-size: .95rem;
   background: var(--navy-dark);
   border-top: 1px solid var(--navy);
+} 
+/* Custom Cursor Styles */
+body, html {
+  cursor: none; /* Hide default cursor */
 }
+
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  background: rgba(21, 205, 168, 0.8); /* Teal */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(1);
+  transition: background 0.2s, transform 0.15s;
+  z-index: 10000;
+  mix-blend-mode: difference;
+}
+
 
