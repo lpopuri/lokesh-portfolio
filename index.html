@@ -176,5 +176,25 @@
     faders.forEach(fader => { appearOnScroll.observe(fader); });
   </script>
   <div id="custom-cursor"></div>
+  <script>
+  // Custom cursor movement
+  const cursor = document.getElementById('custom-cursor');
+  document.addEventListener('mousemove', e => {
+    cursor.style.top = e.clientY + 'px';
+    cursor.style.left = e.clientX + 'px';
+  });
+
+  // Cursor enlarge on link or button hover
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.transform = 'translate(-50%, -50%) scale(1.7)';
+      cursor.style.background = 'rgba(24,255,255,0.8)';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+      cursor.style.background = 'rgba(21,205,168,0.8)';
+    });
+  });
+</script>
 </body>
 </html>
