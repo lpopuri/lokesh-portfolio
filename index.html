@@ -1,84 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lokesh Popuri | .NET Full Stack Developer</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
-  <!-- HERO SECTION -->
-  <section class="hero">
+  <nav class="navbar fade-in">
+    <div class="nav-container">
+      <div class="logo">Lokesh Popuri</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero fade-in">
     <div class="container">
-      <h1>Lokesh Popuri</h1>
+      <h1>
+        <span class="icon" id="codeIcon"></span>
+        Lokesh Popuri
+      </h1>
       <h2>.NET Full Stack Developer</h2>
-      <p class="tagline">Building modern, scalable web applications.</p>
-      <a href="#contact" class="button">Contact</a>
-      <a href="Lokesh_Resume.pdf" download class="button outline">Download Resume</a>
+      <p class="tagline">Building robust and scalable web applications.</p>
+      <div class="hero-buttons">
+        <a href="Lokesh_Resume.pdf" class="button" download>
+          <span class="icon" id="downloadIcon"></span>Download Resume
+        </a>
+        <a href="#contact" class="button outline">
+          <span class="icon" id="mailIcon"></span>Contact Me
+        </a>
+      </div>
     </div>
   </section>
-  
-  <!-- ABOUT -->
-  <section id="about" class="about">
+
+  <section id="about" class="about fade-in-up">
     <div class="container">
-      <h3>About</h3>
+      <h3><span class="icon" id="userIcon"></span> About</h3>
       <p>
         Experienced .NET Full Stack Developer with hands-on expertise in designing and developing robust web applications. Passionate about building secure, scalable, and user-centric solutions using the latest technologies in the .NET ecosystem.
       </p>
     </div>
   </section>
-  
-  <!-- SKILLS -->
-  <section id="skills" class="skills">
+
+  <section id="skills" class="skills fade-in-up">
     <div class="container">
-      <h3>Skills</h3>
-      <ul>
-        <li>ASP.NET Core, MVC, Web API, Entity Framework</li>
-        <li>C#, JavaScript, TypeScript, Angular, React</li>
-        <li>SQL Server, Azure, AWS, Git, CI/CD</li>
-        <li>Microservices, RESTful APIs, Agile/Scrum</li>
-      </ul>
-    </div>
-  </section>
-  
-  <!-- EXPERIENCE -->
-  <section id="experience" class="experience">
-    <div class="container">
-      <h3>Experience</h3>
-      <ul>
+      <h3><span class="icon" id="settingsIcon"></span> Skills</h3>
+      <ul class="skill-list">
         <li>
-          <strong>McKesson Corporation</strong> – .NET Full Stack Developer <br>
-          Designed and developed healthcare applications, integrated APIs, and maintained cloud-based solutions using Azure and AWS.
+          <span class="icon" id="dotnetIcon"></span>ASP.NET Core, MVC, Web API, Entity Framework
         </li>
         <li>
-          <strong>USAA</strong> – Software Engineer <br>
-          Developed insurance platforms, implemented RESTful services, and optimized database operations.
+          <span class="icon" id="codeAltIcon"></span>C#, JavaScript, TypeScript, Angular, React
         </li>
         <li>
-          <strong>Jefferies Financial Group</strong> – Developer <br>
-          Built secure banking applications, enhanced performance, and improved user experience.
+          <span class="icon" id="databaseIcon"></span>SQL Server, Azure, AWS, Git, CI/CD
+        </li>
+        <li>
+          <span class="icon" id="cloudIcon"></span>Microservices, RESTful APIs, Agile/Scrum
         </li>
       </ul>
     </div>
   </section>
-  
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
+
+  <section id="experience" class="experience fade-in-up">
     <div class="container">
-      <h3>Contact</h3>
-      <p>
-        <a href="mailto:lokeshp3693@gmail.com">lokeshp3693@gmail.com</a> <br>
-        <a href="https://www.linkedin.com/in/lokesh-popuri" target="_blank">LinkedIn</a>
-      </p>
+      <h3><span class="icon" id="briefcaseIcon"></span> Experience</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <strong>McKesson Corporation</strong> – .NET Full Stack Developer<br>
+            <span class="timeline-desc">
+              Designed and developed healthcare applications, integrated APIs, and maintained cloud-based solutions using Azure and AWS.
+            </span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <strong>USAA</strong> – Software Engineer<br>
+            <span class="timeline-desc">
+              Developed insurance platforms, implemented RESTful services, and optimized database operations.
+            </span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <strong>Jefferies Financial Group</strong> – Developer<br>
+            <span class="timeline-desc">
+              Built secure banking applications, enhanced performance, and improved user experience.
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  
-  <!-- FOOTER -->
+
+  <section id="contact" class="contact fade-in-up">
+    <div class="container">
+      <h3><span class="icon" id="contactIcon"></span> Contact</h3>
+      <div class="contact-links">
+        <a href="mailto:lokeshp3693@gmail.com" target="_blank">
+          <span class="icon" id="mail2Icon"></span>Email
+        </a>
+        <a href="https://www.linkedin.com/in/lokesh-popuri" target="_blank">
+          <span class="icon" id="linkedinIcon"></span>LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <div class="container">
       <p>&copy; 2025 Lokesh Popuri</p>
     </div>
   </footer>
+
+  <script>
+    // Lucide Icon rendering
+    lucide.createIcons({
+      icons: {
+        code: "code",
+        download: "download",
+        mail: "mail",
+        user: "user",
+        settings: "settings",
+        database: "database",
+        briefcase: "briefcase",
+        cloud: "cloud",
+        "code-2": "code-2",
+        linkedin: "linkedin",
+      },
+      attrs: {
+        width: 20,
+        height: 20,
+        stroke: "#15cda8",
+        "stroke-width": 2,
+      },
+      replaceAttr: true
+    });
+    // Assigning icons manually to each element
+    document.getElementById("codeIcon").innerHTML = lucide.icons.code.toSvg();
+    document.getElementById("downloadIcon").innerHTML = lucide.icons.download.toSvg();
+    document.getElementById("mailIcon").innerHTML = lucide.icons.mail.toSvg();
+    document.getElementById("userIcon").innerHTML = lucide.icons.user.toSvg();
+    document.getElementById("settingsIcon").innerHTML = lucide.icons.settings.toSvg();
+    document.getElementById("dotnetIcon").innerHTML = lucide.icons.code.toSvg();
+    document.getElementById("codeAltIcon").innerHTML = lucide.icons["code-2"].toSvg();
+    document.getElementById("databaseIcon").innerHTML = lucide.icons.database.toSvg();
+    document.getElementById("cloudIcon").innerHTML = lucide.icons.cloud.toSvg();
+    document.getElementById("briefcaseIcon").innerHTML = lucide.icons.briefcase.toSvg();
+    document.getElementById("contactIcon").innerHTML = lucide.icons.mail.toSvg();
+    document.getElementById("mail2Icon").innerHTML = lucide.icons.mail.toSvg();
+    document.getElementById("linkedinIcon").innerHTML = lucide.icons.linkedin.toSvg();
+  </script>
+  <script>
+    // Fade-in animation on scroll
+    const faders = document.querySelectorAll('.fade-in, .fade-in-up');
+    const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('appear');
+        appearOnScroll.unobserve(entry.target);
+      });
+    }, appearOptions);
+    faders.forEach(fader => { appearOnScroll.observe(fader); });
+  </script>
 </body>
 </html>
-
